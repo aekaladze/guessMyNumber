@@ -1,3 +1,7 @@
+document.querySelector(".again").textContent = "New";
+document.querySelector(".check").textContent = "Compare";
+document.querySelector(".message").textContent = "Start playing...";
+
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
@@ -39,6 +43,6 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").textContent = "?";
   document.querySelector(".guess").value = "";
   document.querySelector("body").style.background = "#222";
-  displayMessage("Start playing");
+  displayMessage("Start playing...");
   secretNumber = Math.trunc(Math.random() * 20) + 1;
 });
